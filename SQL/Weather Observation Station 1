@@ -20,6 +20,6 @@ print the list of CITY and STATE in lexicographical order of city and state,
 i.e. if there are two or more cities with same name arrange these by lexicographical order of state.
 */
 
-SELECT CITY, STATE
-FROM STATION
-ORDER BY CITY, STATE;
+SELECT city, state
+FROM station
+ORDER BY city, state;
