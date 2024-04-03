@@ -20,4 +20,4 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 SELECT DISTINCT city
 FROM station 
-WHERE lower(substr(CITY,1,1)) not in ('a', 'e', 'i', 'o', 'u') AND lower(substr(CITY,-1,1)) not in ('a', 'e', 'i', 'o', 'u');
+WHERE lower(substr(CITY,1,1)) not in ('a', 'e', 'i', 'o', 'u') OR lower(substr(CITY,-1,1)) not in ('a', 'e', 'i', 'o', 'u');
